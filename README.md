@@ -2,7 +2,7 @@
 
 Welcome to the bot setup guide! Follow the steps below to install and configure the bot correctly. This guide is designed to be beginner-friendly, with clear explanations for each step.
 
-> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux.)
+> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
 
 ---
 
@@ -43,7 +43,7 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
    Open your terminal or command prompt, navigate to the folder where the bot files are located, and run:
 
    ```bash
-   npm install --force user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid xlsx readline-sync moment lodash qs
+   npm install --force user-agents axios colors https-proxy-agent socks-proxy-agent 
    ```
 
    If you encounter an Execution Policy error on Windows, run:
@@ -116,12 +116,17 @@ _Note: Wallet updates are currently not supported._
 ### 4. `proxies.txt` - 🌐 Proxy List (Optional)
 
 If you are using proxies, add them here. Leave the file blank if you are not using proxies. Supported formats:
+- [Get it from here](https://www.webshare.io/?referral_code=4l5kb3glsce7)
 
 ```txt
-http://user:password@host:port
-https://user:password@host:port
-socks4://user:password@host:port
-socks5://user:password@host:port
+http://host:port
+https://host:port
+socks4://host:port
+socks5://host:port
+http://user:pass@host:port
+https://user:pass@host:port
+socks4://user:pass@host:port
+socks5://user:pass@host:port
 ```
 
 _Note: each row for each account_
@@ -133,7 +138,7 @@ _Note: each row for each account_
 1. Navigate to the folder containing the bot files:
 
    ```bash
-   cd /path/to/meomundep-folder
+   cd /path/to/magicnewton
    ```
 
 2. Run the bot using the following command:
@@ -150,9 +155,12 @@ _Note: each row for each account_
 
 If you encounter any issues or have questions, feel free to reach out:
 
-- **Contact:** [Contact Me](https://t.me/MeoMunDep)
-- **Group:** [Join the Group](https://t.me/KeoAirDropFreeNe)
-- **Channel:** [Visit the Channel](https://t.me/KeoAirDropFreeNee)
+- **Contact for work:** [Telegram](https://t.me/MeoMunDep)
+- **Join the support group:** [Join here](https://t.me/KeoAirDropFreeNe)
+- **Updates Channel:** [View channel](https://t.me/KeoAirDropFreeNee)
+- **YouTube Channel:** [Watch here](https://www.youtube.com/@keoairdropfreene)
+- **Instagram:** [Follow me](https://www.instagram.com/meomundep)
+- **Tiktok:** [Follow me](https://www.tiktok.com/@meomundep)
 
 Your support is greatly appreciated! 🐱
 
