@@ -17,6 +17,40 @@ print_red() {
     echo -e "${RED}$1${NC}"
 }
 
+check_node() {
+    if ! command -v node &> /dev/null; then
+        print_red "Node.js not found, installing..."
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sudo apt update && sudo apt install -y nodejs npm
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            brew install node
+        elif [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
+            echo "Please install Node.js manually on Windows."
+        fi
+        print_green "Node.js installation completed."
+    else
+        print_green "Node.js is already installed."
+    fi
+}
+check_node
+
+check_git() {
+    if ! command -v git &> /dev/null; then
+        print_red "Git not found, installing..."
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sudo apt update && sudo apt install -y git
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            brew install git
+        elif [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
+            echo "Please install Git manually on Windows."
+        fi
+        print_green "Git installation completed."
+    else
+        print_green "Git is already installed."
+    fi
+}
+check_git
+
 chmod +x "$0"
 
 if [ -d "../node_modules" ]; then
